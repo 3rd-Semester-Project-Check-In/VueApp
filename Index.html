@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Check-in Easy!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Index.css">
+</head>
+
+
+<!-- The header at the top of the screen with references to admin controls and a login button(modal) -->
+<ul>
+  <li><a class="active" href="Index.html">Lokale Oversigt</a></li>
+  <li><a href="CRUD.html" id="admin-controls">Admin Controls</a></li>
+  <header><button class="align-right" onclick="document.getElementById('id01').style.display='block'">Login</button></header>
+</ul>     
+
+
+   <!-- Lokale display using containers -->
+   <body>
+   <div id="app">
+    <div v-for="(lokale, kort) in lokaler" class="lokalecontainer">
+      <h6 class="text"> Lokale: {{ lokale.lokaleId }} </h6>
+      <div v-for="kort in korts">
+        <h6 v-if="kort.cardId == lokale.cardId" class="text"> Ansat: {{ kort.kort_Ejer }} </h6>
+      </div>
+      <h6 v-if="lokale.cardId == null" class="text"> Ledig </h6>
+      
+      <!-- Status Check with colors -->
+      <h6 v-if="lokale.cardId == null" class="checked-out">Status: ●</h6>
+      <h6 v-else="lokale.cardId != null" class="checked-in">Status: ●</h6>
+    </div>
+   </div>
+   <script src="Index.js"></script>
+  
+</body>
+
+
+
+  <!-- The Modal/Login pop-up -->
+  <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close">&times;</span>
+
+    <!-- Modal Content - Username and Password inputs -->
+    <form class="modal-content animate" action="/action_page.php">
+
+        <div class="modalcontainer">
+        <label for="uname"><b>Username:</b></label>
+        <input type="name" placeholder="Indtast Username" name="uname" required>
+
+        <label for="psw"><b>Password:</b></label>
+        <input type="password" placeholder="Indtast Password" name="psw" required>
+
+        <div class="buttoncontainer">
+          <button class="modallogin" type="submit">Login</button>
+          <button class="modalcancel" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+        </div>
+
+    </form>
+</div>
+
+</html>

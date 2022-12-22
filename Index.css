@@ -1,0 +1,288 @@
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+
+  body{
+    background-color: #17172e;
+    color: rgb(255, 255, 255);
+  }
+
+  b{
+    color: black;
+    font-family:Helvetica Neue,Roboto,Arial,Sans-Serif;
+  }
+
+  header{
+    margin-right: auto;
+    padding-top: 4px;
+    padding-right: 3px;
+  }
+
+.lokalecontainer {
+    max-width: 240px;
+    margin-left: 15px;
+    margin-top: 16px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: left;
+    text-indent: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    background-color: #28283e;
+    color: #fefefe;
+}
+
+.buttoncontainer {
+  max-width: 340px;
+  display: align-items;
+  border: 2px;
+}
+
+.modalcontainer {
+  max-width: 340px;
+  border: 2px;
+}
+
+  /* Full-width inputs */
+  input[type=name], input[type=password] {
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2px 8;;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-family:Helvetica Neue,Roboto,Arial,Sans-Serif;
+  }
+  
+.modalcancel{
+    background-color: #9e160d;
+    float: right;
+    margin-top: 15px;
+    width: 100px;
+}
+  
+.modallogin{
+  background-color: #4c6dc8;
+  float: left;
+  margin-top: 15px;
+  width: 100px;
+}
+
+.quotebtn{
+  background-color: #c84caf;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 100px;
+}
+
+.cancel{
+  background-color: #9e160d;
+  margin-left: 2px;
+  margin-top: 8px;
+}
+
+
+.get{
+  background-color: #2bc54c;
+  margin-left: 2px;
+  margin-top: 8px;
+}
+
+.add{
+  background-color: rgb(83, 226, 242);
+  margin-left: 2px;
+  margin-top: 8px;
+}
+
+.login{
+ background-color: #4c6dc8;
+ float: right;
+}
+
+.align-right {
+  float: right;
+}
+
+
+  button {
+    background-color: #4c6dc8;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    font-weight: bold;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+    font-family:Helvetica Neue,Roboto,Arial,Sans-Serif;
+  }
+
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  cancelbutton:hover {
+    opacity: 0.8;
+  }
+
+  modalbutton:hover {
+    opacity: 0.8;
+  }
+
+  getbutton:hover {
+    opacity: 0.8;
+  }
+
+    
+
+.checked-out {
+    color: rgb(29, 232, 29);
+}
+  
+.checked-in {
+    color: #ec190a;
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto; /* 15% from the top and centered */
+    border: 2.3px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    width: fit-content; /* Could be more or less, depending on screen size */
+    height: fit-content;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  
+  modalbutton {
+    background-color: #4c6dc8;
+    color: white;
+    margin-top: 10px;
+    border: 2.3px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    cursor: pointer;
+    width: 60px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+  }
+
+
+  input[type=text]{
+    width: 200px;
+    height: 33px;
+    margin-left: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    margin-top: 10px;
+  }
+
+  h4{
+    margin-left: 15px;
+    margin-bottom: auto;
+  }
+
+  h5{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  h6{
+    padding-top: 10px;
+    font-family:Helvetica Neue,Roboto,Arial,Sans-Serif;
+    font-size: medium;
+    font-weight: 500;
+  }
+
+
+
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    color: rgb(207, 45, 45);
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: rgb(197, 13, 13);
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.3s;
+    animation: animatezoom 0.3s
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #28283e;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family:Helvetica Neue,Roboto,Arial,Sans-Serif;
+    font-weight: bold;
+  }
+  
+  li a:hover {
+    opacity: 0.8;
+  }
+
+
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
